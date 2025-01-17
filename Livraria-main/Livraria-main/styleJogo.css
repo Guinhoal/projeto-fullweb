@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quadro-jogo {
+    width: 100%;
+    height: 932px;
+    border-bottom: 200px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0A0A0A, #2F2F2F, #800000);
+}
+
+.obstaculos {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 500px;
+    animation: animacao-obstaculos 4s infinite linear;
+
+}
+
+.arvore {
+    position: relative;
+    width: 500px;
+    left: 65%;
+    top: 35%;
+}
+
+#livro-caveira {
+    position: relative;
+    width: 120px;
+}
+
+#livro-fantasma-azul {
+    position: relative;
+    width: 120px;
+}
+
+#livro-fantasma-cinza {
+    position: relative;
+    width: 120px;
+}
+
+.logo-imagem {
+    width: 130px;
+    position: absolute;
+    bottom: 0px;
+    left: 130px;
+}
+
+.pulo {
+    animation: pulo 500ms ease-in-out;
+}
+
+@keyframes animacao-obstaculos {
+    from {
+        transform: translateX(calc(100vw + 100px));
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes pulo {
+    0% {
+        bottom: 0px;
+    }
+
+    40%,
+    50%,
+    60% {
+        bottom: 300px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.lua {
+    position: absolute;
+    width: 200px;
+    left: 85%;
+    top: 5%;
+}
+
+.morcego1 {
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: morcegos-animacao 5s infinite linear;
+}
+
+.morcego2 {
+    width: 100px;
+    position: absolute;
+    top: 14%;
+    left: 16%;
+    animation: morcegos-animacao 5s infinite linear;
+}
+
+.morcego3 {
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    animation: morcegos-animacao 5s infinite linear;
+}
+
+@keyframes morcegos-animacao {
+    from {
+        transform: translateX(-540%);
+    }
+
+    to {
+        transform: translateX(1730%);
+    }
+}
+
+.tela {
+    display: none;
+}
+
+.fim-de-jogo {
+    width: 20%;
+    height: 500px;
+    position: absolute;
+    bottom: 7%;
+    left: 36%;
+    background-color: black;
+    border: 5px solid #FFD700;
+    justify-content: flex-end;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fim-de-jogo button {
+    width: 40%;
+    height: 50px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFD700;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 0px 25px rgba(255, 223, 0, 0.8),
+        0px 0px 5px rgba(255, 223, 0, 0.7);
+    border: 3px solid #FFD700;
+}
+
+.fim-de-jogo button:hover {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 0px 20px rgba(255, 255, 255, 0.8),
+        0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.voce {
+    text-align: center;
+    margin-top: 40%
+}
+
+#pontuacao {
+    font-size: xx-large;
+    color: white;
+}

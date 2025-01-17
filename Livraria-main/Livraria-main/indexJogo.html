@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostGame</title>
+    <link rel="stylesheet" href="styleJogo.css">
+    <script defer src="scriptJogo.js"></script>
+    <link rel="shortcut icon" href="imagens-jogo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="quadro-jogo">
+
+        <img src="imagens-jogo/arvore.png" alt="arvore" class="arvore">
+        <img src="imagens-jogo/lua.png" alt="lua" class="lua">
+        <img src="imagens-jogo/morcego.png" alt="morcego1" class="morcego1">
+        <img src="imagens-jogo/morcego.png" alt="morcego2" class="morcego2">
+        <img src="imagens-jogo/morcego.png" alt="morcego3" class="morcego3">
+
+        <img src="imagens-jogo/favicon.png" alt="logo-imagem" class="logo-imagem">
+        <!--Obstáculos-->
+        <div class="obstaculos">
+            <img src="imagens-jogo/livro-fantasma-azul.png" alt="livro-fantasma-azul" id="livro-fantasma-azul">
+            <img src="imagens-jogo/livro-caveira.png" alt="livro-caveira" id="livro-caveira">
+            <img src="imagens-jogo/livro-fantasma-cinza.png" alt="livro-fantasma-cinza" id="livro-fantasma-cinza">
+        </div>
+        <!--Fim do jogo-->
+        <div class="tela">
+            <div class="fim-de-jogo">
+                <img src="imagens-jogo/voce.png" id="voce">
+                <img src="imagens-jogo/dindin.png" alt="dindin" id="dindin">
+                <div id="pontuacao"></div> <br>
+                <a href="indexJogo.html">
+                    <button id="botaoTentarNovamente">Tente Novamente</button>
+                </a>
+                <a href="index.php">
+                    <button id="botaoVoltar">Voltar</button> <br>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

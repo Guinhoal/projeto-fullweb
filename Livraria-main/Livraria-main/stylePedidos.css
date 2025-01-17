@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.voltar-inicio {
+    margin: 20px;
+}
+
+.voltar-inicio a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.voltar-inicio a:hover {
+    text-decoration: underline;
+}
+
+.pedidos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.pedidos-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.acoes a,
+.acoes form {
+    margin-bottom: 5px;
+}
+
+.acoes form {
+    display: inline;
+}
